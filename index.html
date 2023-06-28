@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap');       
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Wix+Madefor+Display:wght@700&display=swap');
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h1 class="heading">Calculator</h1>
+            <div id="result"></div>
+            <button class="button" onclick="clearResult()">C</button>
+            <button class="button" onclick="appendSymbol('7')">7</button>
+            <button class="button" onclick="appendSymbol('8')">8</button>
+            <button class="button" onclick="appendSymbol('9')">9</button>
+            <button class="button" onclick="appendSymbol('/')">/</button>
+            <button class="button" onclick="appendSymbol('4')">4</button>
+            <button class="button" onclick="appendSymbol('5')">5</button>
+            <button class="button" onclick="appendSymbol('6')">6</button>
+            <button class="button" onclick="appendSymbol('*')">*</button>
+            <button class="button" onclick="appendSymbol('1')">1</button>
+            <button class="button" onclick="appendSymbol('2')">2</button>
+            <button class="button" onclick="appendSymbol('3')">3</button>
+            <button class="button" onclick="appendSymbol('-')">-</button>
+            <button class="button" onclick="appendSymbol('.')">.</button>
+            <button class="button" onclick="appendSymbol('0')">0</button>
+            <button class="button erase" onclick="eraseLast()">Erase</button>
+            <button class="button equal" onclick="calculate()">=</button>
+            <button class="button" onclick="appendSymbol('+')">+</button>
+
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
